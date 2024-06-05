@@ -11,12 +11,14 @@ function chessBoard(length, width){
     }
 
     for (let i = 0; i < length; i++){
-            if (x % 2 == 0){
-            console.log(holder1)
+            if (lineType % 2 == 0){
+            console.log(lineA)
             }
             else{
-                console.log(holder2)
+                console.log(lineB)
             }
             lineType += 1
     }
 }
+
+chessBoard(10, 10)
