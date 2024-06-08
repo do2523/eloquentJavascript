@@ -1,24 +1,12 @@
-function chessBoard(length, width){
-    let lineType = 2
-    let lineA = ""
-    let lineB = ""
-
-    for (let j = 0; j < width; j++){
-        lineA += "#"
-        lineA += " "
-        lineB += " "
-        lineB += "#"
+counter = 0
+function countChar(str, c){
+    for (let i = 0; i < str.length; i++){
+        if (str[i] == c){
+            counter += 1
+        }
     }
+    return counter;
 
-    for (let i = 0; i < length; i++){
-            if (lineType % 2 == 0){
-            console.log(lineA)
-            }
-            else{
-                console.log(lineB)
-            }
-            lineType += 1
-    }
 }
 
-chessBoard(10, 10)
+console.log(countChar("Javascript", "a"))
